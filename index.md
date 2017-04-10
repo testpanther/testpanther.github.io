@@ -3,6 +3,10 @@ title: Blogging Like a Hacker
 ---
 # My Awesome Blog
 
+<ul>
 {% for post in site.posts %}
-1. [{{ post.title }}]({{ post.url }})
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </li>
 {% endfor %}
+</ul>
