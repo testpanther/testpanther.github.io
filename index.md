@@ -8,7 +8,7 @@ title: Blogging Like a Hacker
     <div class="md-title">{{ post.title }}</div>
   </md-card-header>
   <md-card-actions>
-    <md-button href="{{ post.url }}">Read More</md-button>
+    <md-button class="md-raised md-primary" href="{{ post.url }}">Read More</md-button>
   </md-card-actions>
   <md-card-content>
     {{ post.excerpt }}
