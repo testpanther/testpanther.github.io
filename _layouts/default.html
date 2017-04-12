@@ -9,9 +9,18 @@
     <link href='//cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    {{ content }}
-    
+    <div id="app">
+      {{ content }}
+    </div>
     <script src="//cdn.jsdelivr.net/vue/2.2.6/vue.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        }
+      });
+    </script>
   </body>
 </html>
